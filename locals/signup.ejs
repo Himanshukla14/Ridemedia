@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+  
+  
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <header>
+  
+  </header>
+  <ul class="quotes">
+    <!-- Loop through quotes -->
+    <% for(var i = 0; i < quotes.length; i++) {%>
+      <li class="quote">
+        <!-- Output name from the iterated quote object -->
+        <span><%= quotes[i].name %></span>:
+        <!-- Output quote from the iterated quote object -->
+        <br>
+        <img src='<%= quotes[i].img  %>' width="150px"  height="150px">
+        <br>
+        <span><%= quotes[i].summary %></span>
+      </li>
+    <% } %>
+  </ul>
+      
+  
+    </footer>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
